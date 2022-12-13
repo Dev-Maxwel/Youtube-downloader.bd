@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download video</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" a href="{% static 'css/bootstrap.css' %}" />
+
+</head>
+
+<body class="body">
+<center>
+    <div id="d-container">
+      <div class="container-box">
+
+       <div id="video_description_box">
+          <h2>{{Title}}</h2> 
+          <div id="video">
+          <div class="ratio ratio-16x9">
+              <iframe id="embed-item" src="{{embed}}" title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        
+
+        <div id="download_video_box">
+              <table class="table caption-top">
+                <caption>Your video is ready..</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="table_sections">Quality</th>
+                    <th scope="col" class="table_sections">Download type</th>
+                    <th scope="col" class="table_sections">File size</th>
+                    <th scope="col" class="table_sections">Downloads</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                 {% for j in video %}
+                  <tr> 
+                    <td class="table_sections">{{j.resolution}}</td>
+                    <td class="table_sections">{{j.type}}</td>
+                    <td class="table_sections">{{j.filesize}}</td>
+                
+                  
+                    <form action="{% url 'ytproject:done' j.resolution %}" method="POST">
+                      {% csrf_token %}
+                    <td class="table_sections"><button class="btn btn-success">Download</button></td>
+                    </form>
+                 {% endfor %}
+                  </tr> 
+                </tbody>
+                
+              </table>
+              
+              <div id="convertion_btn">
+                  <form action="audio_download" method="POST" >
+                    {% csrf_token %}
+                  <td class="table_sections"><button  class="btn btn-primary">Get audio for the video</button></td>
+                  </form>
+              </div>
+
+        </div>
+
+       
+
+
+    <div id="description-box">   
+        <div id="box1" class="box">
+          <h2>How do I download a video?</h2>
+          <p>After your video link is processed, you should see a green button called Download. Click on it and check your downloads</p>
+        </div>
+    
+    </div>
+  
+  </center>
+<script src="{% static 'js/bootstrap.js/' %}>    
+</body>
+</html>
+
+
+
+

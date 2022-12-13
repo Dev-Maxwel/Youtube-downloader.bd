@@ -1,0 +1,142 @@
+/*...............Body...............*/
+.body{
+    background: grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/*...........Main Youtube Page..........*/
+#container{
+    width: 900px;
+    border: 1px solid grey;
+    height: 150vh;
+    background: white;
+}
+
+
+.container h1{
+ color: red;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#headingbox{
+    border: 1px solid black;
+    margin-bottom: 70px;
+    padding-top: 30px;
+}
+
+#headingbox h1{
+     font-size: 40px;
+}
+
+#contents{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#items{
+    border: 1px solid black;
+    margin-top: 30px;
+    height: 70vh;
+    width: 700px;
+}
+
+
+#link {
+    width: 38em;
+    padding: 25px;
+    text-align: center;
+    border: 5px solid orange;
+}
+
+#btn-btn-primary{
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
+    width: 100px;
+    height: 78px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(69, 69, 228);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#description-box{
+    width: 700px;
+    border: 1px solid grey;
+}
+
+.box{
+    border: 1px solid grey;
+    width: 550px;
+}
+
+/*...........video and audio download page...............*/
+#d-container{
+    margin: 2em;
+    width: 900px;
+    border: 1px solid grey;
+    background: white;
+
+}
+
+table{
+    text-align: center;
+}
+
+#video_description_box{
+    border: 1px solid black;
+}
+
+#video{
+    margin: 40px;
+    border: 2px solid black;
+}
+
+#download_message_info{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 7px;
+    width: 30em;
+}
+
+thead{
+    background-color: rgb(26, 25, 25);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.download_video_box{
+    border: 1px solid black;
+}
+
+.table_sections{
+    border: 1px solid whitesmoke;
+}
+
+#convertion_btn{
+    float: right;
+    margin-right: 30px;
+    padding: 60px;
+}
+
+/*.........Shared............*/
+.container-box{
+    padding: 50px;
+    border: 1px solid red;
+    padding: 50px;
+}
+
+
+/*..........Login and Signup.........*/
+#msg{
+    color: red
+}
+
+#btn{
+    background-color: black,
+}
+
+
+
+
